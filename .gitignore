@@ -16,6 +16,6 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-composer.lock
+# composer.lock
 package-lock.json
 storage/logs/laravel.log
