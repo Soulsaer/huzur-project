@@ -110,7 +110,7 @@
             <div class="mx-3">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h3 class="homepage_heading mb-4">Discover Jewelry For Every Story test</h3>
+                        <h3 class="homepage_heading mb-4">Discover Jewelry For Every Story</h3>
                     </div>
                 </div>
                 <div class="row">
