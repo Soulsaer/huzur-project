@@ -101,7 +101,11 @@ class LastblogController extends AdminController
         $form->textarea('meta_keyword', __('Meta keyword'));
         $form->textarea('other_meta', __('Other meta'));
         $form->ckeditor('description', __('Description'));
-        $form->switch('status', __('Status'));
+        $form->switch('status', __('Status'))->states([
+            'on'  => ['value' => '1', 'text' => 'On', 'color' => 'success'],
+            'off' => ['value' => '0', 'text' => 'Off', 'color' => 'danger'],
+        ])->default('0');  
+        
         $form->text('alt', __('Alt'));
 
         return $form;
