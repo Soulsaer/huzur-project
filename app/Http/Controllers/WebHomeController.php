@@ -193,36 +193,41 @@ class WebHomeController extends Controller
     
     
     
-    public function category_details(Request $request){
-
+    public function category_details(Request $request)
+    {
         $slug = $request->segment(1);
-                // dd('aaa');
+
         $formatTreeCategory = Category::tree();
         $subChieldcategory = Chieldcategory::all();
-        $categoryData = Category::where('url',$slug)->first();
-          $international_shop = Shop::all();
-        @$productDetails = Product::where('parent_category',$categoryData->id)->inRandomOrder()->paginate(36);
-        // dd($categoryData);
-        
-       
-        @$content =$categoryData->description;
-        @$meta_data = TblMetaInfo::find(10);
-        if($meta_data){
-        //   $keyword = $meta_data->keyword;
-        //   $title = $meta_data->title;
-        //   $description = $meta_data->description;
-        //   $others = $meta_data->other_meta;
-          @$keyword =  $categoryData->meta_keyword;
-          @$title =  $categoryData->meta_title;
-          @$description =  $categoryData->meta_description;
-          @$others = $categoryData->other_meta;
-          }
+        $categoryData = Category::where('url', $slug)->first();
+        $international_shop = Shop::all();
 
+        $productQuery = Product::where('parent_category', $categoryData->id)->inRandomOrder();
 
-        return view('category_details',compact(['international_shop','keyword','title','description','others','formatTreeCategory','subChieldcategory','productDetails' ,'content']));
-      }
+        // Check if the request is AJAX for infinite scroll
+        if ($request->ajax()) {
+            $productDetails = $productQuery->paginate(36);
+            return view('partials.products', compact('productDetails'))->render();
+        }
+
+        // Regular request
+        $productDetails = $productQuery->paginate(36);
+        $content = $categoryData->description;
+        $meta_data = TblMetaInfo::find(10);
+
+        if ($meta_data) {
+            $keyword = $categoryData->meta_keyword;
+            $title = $categoryData->meta_title;
+            $description = $categoryData->meta_description;
+            $others = $categoryData->other_meta;
+        }
+
+        return view('category_details', compact(['international_shop', 'keyword', 'title', 'description', 'others', 'formatTreeCategory', 'subChieldcategory', 'productDetails', 'content']));
+    }
+
       
-      public function child_category_details($slug ,$child_slug){
+    public function child_category_details($slug ,$child_slug)
+    {
         //   dd($slug ,$child_slug);
         $formatTreeCategory = Category::tree();
         $subChieldcategory = Chieldcategory::all();
@@ -253,7 +258,7 @@ class WebHomeController extends Controller
           }
         return view('category_details',compact(['international_shop','keyword','title','description','others','formatTreeCategory','subChieldcategory','productDetails','content']));
           
-      }
+    }
     
     
     
@@ -786,20 +791,19 @@ public function about_us(){
     {
 
         $faq = Faq::where("study", "no")->get();
-        $recent_reviews = Review::where('status', 1)->get();
+        $recent_reviews = Review::where('status', 1)->get(); //
         $blog = Lastblog::where("status", "1")->get();
         $team = Team::where("status", "1")->get();
-
+        
         $meta_data = TblMetaInfo::find(8);
         $lastblog = Lastblog::where("status", "1")->take(4)->orderBy('id', 'desc')->get();
-
-        $whyChoose = \App\Models\WhyChooseHuzurr::get();
-        $resellers = \App\Models\WorldwideReseller::get();
-        $br_jewelries = \App\Models\BestRatedJewelry::get();
+        
+        // $whyChoose = \App\Models\WhyChooseHuzurr::get();
+        // $resellers = \App\Models\WorldwideReseller::get();
+        // $br_jewelries = \App\Models\BestRatedJewelry::get();
 
 
         $businessSection = \App\Models\BusinessPageSection::find(1);
-
         $data = [
             "keyword" => null,
             "title" => null,
@@ -812,9 +816,9 @@ public function about_us(){
             "team" => $team,
             "businessSection" => $businessSection,
             "lastblog" => $lastblog,
-            "whyChoose" => $whyChoose,
-            "resellers" => $resellers,
-            "br_jewelries" => $br_jewelries
+            // "whyChoose" => $whyChoose,
+            // "resellers" => $resellers,
+            // "br_jewelries" => $br_jewelries
         ];
         
         if ($meta_data) {
