@@ -110,12 +110,12 @@
             <div class="mx-3">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h3 class="homepage_heading mb-4">Discover Jewelry For Every Story testong </h3>
+                        <h3 class="homepage_heading mb-4">Discover Jewelry For Every Story</h3>
                     </div>
                 </div>
                 <div class="row">
                     @foreach($discover as $item)
-                    <div class="col-lg-2 col-md-4 mb-md-3 col-6 mb-lg-0 py-1 fs-6">
+                    <div class="col-lg-2 col-md-4 mb-md-3 col-6 mb-lg-0 py-1 fs-6 px-1">
                         <a href="{{ url($item->slug) }}">
                             <div class="banner-features wow fadeIn animated hover-up">
                                 <img src="{{asset('storage/'.$item->banner)}}" alt="{{$item->alt}}">

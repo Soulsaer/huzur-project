@@ -352,7 +352,7 @@ input[type=number]:focus,
 }
 
 .text-brand {
-    color: #fcbba4 !important;
+    color: black !important;
 }
 
 .text-primary {
@@ -368,7 +368,7 @@ input[type=number]:focus,
 }
 
 .text-success {
-    color: #fcbba4 !important;
+    color: black !important;
 }
 
 .text-info {
@@ -726,7 +726,7 @@ strong,
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #fcbba4;
+    background-color: black;
 }
 
 .section-title span {
@@ -1968,9 +1968,9 @@ label {
 }
 
 .slider-arrow .slider-btn:hover {
-    background-color: #fcbba4;
+    background-color: black;
     color: #fff;
-    border-color: #fcbba4;
+    border-color: black;
 }
 
 .slider-arrow.slider-arrow-2 .slider-btn {
@@ -2356,13 +2356,13 @@ label {
 }
 
 .nav-tabs .nav-link.active {
-    color: #fcbba4;
+    color: black;
     background-color: transparent;
     border-bottom: 2px solid #000;
 }
 
 .nav-tabs .nav-link:hover {
-    color: #fcbba4;
+    color: black;
     background-color: transparent;
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
@@ -3356,7 +3356,7 @@ table .product-thumbnail img {
 }
 
 .banner-features h4:hover {
-    color: #fcbba4;
+    color: black;
     text-decoration: underline 1px #000;
 }
 
@@ -3731,6 +3731,13 @@ table .product-thumbnail img {
     -moz-transition: .2s;
     -webkit-transition: .2s;
     -o-transition: .2s;
+    /* box-shadow: 0 0 1px 0px #000; */
+}
+.product-cart-wrap:hover {
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     box-shadow: 0 0 1px 0px #000;
 }
 
@@ -3812,12 +3819,12 @@ table .product-thumbnail img {
     height: 30px;
     line-height: 30px;
     border-radius: 50px;
-    background-color: #f7e3dc;
+    background-color: lightgrey;
     text-align: center;
     margin-right: 8px;
     position: relative;
     display: inline-block;
-    border: 1px solid #f7e3dc;
+    border: 1px solid black;
 }
 
 .product-cart-wrap .product-action-1 button.small,
@@ -3842,7 +3849,7 @@ table .product-thumbnail img {
     font-size: 9px;
     padding: 7px 10px;
     color: #000;
-    background-color: #fcbba4;
+    background-color: black;
     content: attr(aria-label);
     line-height: 1.3;
     -webkit-transition-delay: .1s;
@@ -3887,7 +3894,7 @@ table .product-thumbnail img {
 
 .product-cart-wrap .product-action-1 button:hover,
 .product-cart-wrap .product-action-1 a.action-btn:hover {
-    background-color: #fcbba4;
+    background-color: black;
     border: 1px solid transparent;
 }
 
@@ -4003,7 +4010,7 @@ table .product-thumbnail img {
 }
 
 .product-cart-wrap .product-content-wrap .product-price span.new-price {
-    color: #fcbba4;
+    color: black;
 }
 
 .product-cart-wrap .product-content-wrap .product-price span.old-price {
@@ -4225,8 +4232,8 @@ table .product-thumbnail img {
     border: none;
     height: 4px;
     border-radius: 0px;
-    background: #fcbba4;
-    color: #fcbba4;
+    background: black;
+    color: black;
 }
 
 .range #slider-range .ui-slider-range {
@@ -4241,7 +4248,7 @@ table .product-thumbnail img {
     width: 14px;
     height: 14px;
     line-height: 10px;
-    background: #fcbba4;
+    background: black;
     border: none;
     border-radius: 100%;
     top: -5px;
@@ -4827,8 +4834,8 @@ table .product-thumbnail img {
 }
 
 .tab-style3 .nav-tabs .nav-item a.active {
-    border-bottom-color: #fcbba4;
-    color: #fcbba4;
+    border-bottom-color: black;
+    color: black;
 }
 
 .tab-style3 .nav-tabs li.nav-item a {
@@ -4982,7 +4989,7 @@ table .product-thumbnail img {
 }
 
 .progress-bar {
-    background-color: #fcbba4;
+    background-color: black;
 }
 
 .shop-filter-toogle {
@@ -6232,7 +6239,7 @@ h6.post-title {
 }
 
 .header-bottom .header-action-right a span.pro-count {
-    background-color: #fcbba4;
+    background-color: black;
     color: #fff;
 }
 
@@ -6246,7 +6253,7 @@ h6.post-title {
     color: #1a1a1a;
     border-radius: 4px;
     padding: 3px 50px 3px 20px;
-    border: 1px solid #fcbba4;
+    border: 1px solid black;
     background-color: #ffffff;
     -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -6632,7 +6639,7 @@ h6.post-title {
 }
 
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li:hover>a {
-    color: #fcbba4;
+    color: black;
 }
 
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .categori-dropdown-wrap ul li a {
@@ -7121,7 +7128,7 @@ span.fi-rs-apps {
 }
 
 .main-menu>nav>ul>li>a:hover {
-    color: #fcbba4 !important;
+    color: black !important;
 }
 
 .main-menu>nav>ul>li>a i {
@@ -7266,7 +7273,7 @@ span.fi-rs-apps {
 }
 
 .main-menu>nav>ul>li ul.mega-menu li ul li a:hover {
-    color: #fcbba4;
+    color: black;
     text-decoration-thickness: 0.2rem !important;
 }
 
@@ -7421,7 +7428,7 @@ span.fi-rs-apps {
 }
 
 .main-menu>nav>ul>li ul.sub-menu li a:hover {
-    color: #fcbba4;
+    color: black;
 }
 
 .main-menu>nav>ul>li ul.mega-menu li .menu-banner-wrap .menu-banner-content h4 {
@@ -7721,7 +7728,7 @@ span.fi-rs-apps {
 
 .download-app a img.active,
 .download-app a img:hover {
-    border: 2px solid #fcbba4;
+    border: 2px solid black;
 }
 
 .footer-list {
@@ -9287,7 +9294,7 @@ content: "\2212";
 }
 
 .form a.text {
-    color: #fcbba4;
+    color: black;
     text-decoration: none;
 }
 
@@ -9375,11 +9382,11 @@ content: "\2212";
 }
 
 .accordion .accordion-item {
-    border-bottom: 1px solid #fcbba4;
+    border-bottom: 1px solid black;
 }
 
 .accordion .accordion-item button[aria-expanded='true'] {
-    border-bottom: 1px solid #fcbba4;
+    border-bottom: 1px solid black;
 }
 
 .accordion button {
@@ -9399,14 +9406,14 @@ content: "\2212";
 .accordion button:hover,
 .accordion button:focus {
     cursor: pointer;
-    color: #fcbba4;
+    color: black;
 }
 
 .accordion button:hover::after,
 .accordion button:focus::after {
     cursor: pointer;
-    color: #fcbba4;
-    border: 1px solid #fcbba4;
+    color: black;
+    border: 1px solid black;
 }
 
 .accordion button .accordion-title {
@@ -9447,7 +9454,7 @@ content: "\2212";
 }
 
 .accordion button[aria-expanded='true'] {
-    color: #fcbba4;
+    color: black;
 }
 
 .accordion button[aria-expanded='true'] .icon::after {
@@ -9509,7 +9516,7 @@ content: "\2212";
 
 .card_celebrate:hover .view_detail_btn button {
     padding: 10px 25px;
-    background-color: #fcbba4 !important;
+    background-color: black !important;
     color: #000 !important;
     border: 1px solid #000;
     transition: all .6s;
@@ -9517,13 +9524,13 @@ content: "\2212";
 }
 
 .card_celebrate:hover .view_detail_btn button:hover {
-    border: 1px solid #fcbba4;
+    border: 1px solid black;
     color: #fff !important;
     background-color: transparent !important;
 }
 
 .product-des .product-name {
-    color: #fcbba4 !important;
+    color: black !important;
 }
 
 .card-stone {
@@ -9539,7 +9546,7 @@ content: "\2212";
 
 .section-para-stone {
     font-size: 10px;
-    color: #fcbba4;
+    color: black;
 }
 
 .section-para-stone span {
@@ -9634,7 +9641,7 @@ content: "\2212";
 input[type=radio]:checked+label>img,
 input[type=radio]:checked+label>span {
     border: 1px solid #fff;
-    border: 1px solid #fcbba4;
+    border: 1px solid black;
     border-radius: 50%;
 }
 
@@ -9653,7 +9660,7 @@ input[type=radio]+label>span {
 
 .pro_titl {
     font-size: 16px;
-    color: #fcbba4;
+    color: black;
 }
 
 @media (max-width: 576px) {
@@ -9892,7 +9899,7 @@ li:active>.drop_ul {
 input[type=radio]:checked+label>img,
 input[type=radio]:checked+label>span {
     border: 1px solid #fff;
-    border: 1px solid #fcbba4;
+    border: 1px solid black;
     border-radius: 50%;
 }
 
@@ -9953,19 +9960,19 @@ input[type=radio]+label>span {
 
 .images .img_text {
     font-size: 16px;
-    color: #fcbba4;
+    color: black;
     text-align: center;
 }
 
 .gift_month a {
     padding: 10px 0;
     font-size: 16px;
-    color: #fcbba4;
+    color: black;
 }
 
 .images .gift_title {
     font-size: 14px;
-    color: #fcbba4;
+    color: black;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -9990,14 +9997,14 @@ input[type=radio]+label>span {
 
 .sopping_you a {
     padding: 10px 18px;
-    color: #fcbba4;
+    color: black;
 }
 
 /* About  End*/
 
 /* Business With US */
 .businesss-title-1 {
-    color: #fcbba4;
+    color: black;
 }
 
 .businesss-ul {
@@ -10092,11 +10099,11 @@ input[type=radio]+label>span {
 }
 
 .field__input:hover {
-    border: 1px solid #fcbba4;
+    border: 1px solid black;
 }
 
 .field__input:focus {
-    border: 1px solid #fcbba4;
+    border: 1px solid black;
 }
 
 .field:focus-within {
@@ -10564,8 +10571,8 @@ div.radio-with-Icon p.radioOption-Item input[type="radio"]+label:after {
 }
 
 .input-group-donate .input-donate:focus {
-    outline: #fcbba4 !important;
-    border: 1px solid #fcbba4 !important;
+    outline: black !important;
+    border: 1px solid black !important;
 }
 
 .donation_select_box {
@@ -10584,7 +10591,7 @@ div.radio-with-Icon p.radioOption-Item input[type="radio"]+label:after {
 }
 
 .footer_content .border:hover i {
-    color: #fcbba4;
+    color: black;
     background: #000;
 }
 
@@ -10595,7 +10602,7 @@ div.radio-with-Icon p.radioOption-Item input[type="radio"]+label:after {
     font-size: 22px;
     text-align: center;
     padding: 32px 0 0;
-    color: #fcbba4 !important;
+    color: black !important;
 }
 
 .promotion .promotion_para {
@@ -10611,19 +10618,19 @@ div.radio-with-Icon p.radioOption-Item input[type="radio"]+label:after {
 
 .images .img_text {
     font-size: 16px;
-    color: #fcbba4;
+    color: black;
     text-align: center;
 }
 
 .gift_month a {
     padding: 10px 0;
     font-size: 16px;
-    color: #fcbba4;
+    color: black;
 }
 
 .images .gift_title {
     font-size: 14px;
-    color: #fcbba4;
+    color: black;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -10645,14 +10652,14 @@ div.radio-with-Icon p.radioOption-Item input[type="radio"]+label:after {
 
 .sopping_you h2 {
     font-size: 46px;
-    color: #fcbba4;
+    color: black;
     margin: 20px 0 40px;
     line-height: 44px;
 }
 
 .sopping_you a {
     padding: 10px 18px;
-    color: #fcbba4;
+    color: black;
 }
 
 /* Gift1 */
@@ -10662,7 +10669,7 @@ div.radio-with-Icon p.radioOption-Item input[type="radio"]+label:after {
     font-size: 26px;
     text-align: center;
     padding: 32px 0 0;
-    color: #fcbba4 !important;
+    color: black !important;
 }
 
 .promotion .promotion_para {
@@ -10678,19 +10685,19 @@ div.radio-with-Icon p.radioOption-Item input[type="radio"]+label:after {
 
 .images .img_text {
     font-size: 16px;
-    color: #fcbba4;
+    color: black;
     text-align: center;
 }
 
 .gift_month a {
     padding: 10px 0;
     font-size: 16px;
-    color: #fcbba4;
+    color: black;
 }
 
 .images .gift_title {
     font-size: 14px;
-    color: #fcbba4;
+    color: black;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -10712,14 +10719,14 @@ div.radio-with-Icon p.radioOption-Item input[type="radio"]+label:after {
 
 .sopping_you h2 {
     font-size: 46px;
-    color: #fcbba4;
+    color: black;
     margin: 20px 0 40px;
     line-height: 44px;
 }
 
 .sopping_you a {
     padding: 10px 18px;
-    color: #fcbba4;
+    color: black;
 }
 
 /* Gift2 */
@@ -10733,7 +10740,7 @@ div.radio-with-Icon p.radioOption-Item input[type="radio"]+label:after {
 }
 
 .brand_logo::first-letter {
-    color: #fcbba4;
+    color: black;
     font-size: 40px;
 }
 
@@ -10938,7 +10945,7 @@ div.radio-with-Icon p.radioOption-Item input[type="radio"]+label:after {
 
 /* whishlist */
 .product-des .product-name {
-    color: #fcbba4 !important;
+    color: black !important;
 }
 
 /* Whislist end */
@@ -10984,7 +10991,7 @@ div.radio-with-Icon p.radioOption-Item input[type="radio"]+label:after {
 .page-link:hover {
     position: relative;
     display: block;
-    color: #fcbba4;
+    color: black;
     text-decoration: none;
     background-color: #000;
     border: 1px solid #dee2e6;
@@ -12666,7 +12673,7 @@ input[type="range"]::-moz-range-thumb {
     transform: translateY(-50%);
     font-size: 18px;
     color: #fff;
-    background-color: #fcbba4;
+    background-color: black;
     border: none;
     padding: 10px;
     cursor: pointer;

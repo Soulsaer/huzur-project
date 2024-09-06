@@ -461,9 +461,9 @@
                             @if ($productDetails)
                             @foreach($productDetails as $_productDetails)
                           
-                            <div class="col-lg-4 col-md-4 col-12 col-sm-6 product-col">
+                            <div class="col-lg-4 col-md-4 col-12 col-sm-6 product-col px-1">
                                 <div class="product-cart-wrap mb-30 hover-up">
-                                    <div class="product-img-action-wrap ">
+                                    <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
                                             <a href="{{ route('singleproduct', ['url' => $_productDetails->url_key]) }}">
                                                    
@@ -476,11 +476,11 @@
                                     <div class="product-content-wrap">
                                          
                                         <span>
-                                            <a href="{{ route('singleproduct', ['url' => $_productDetails->url_key]) }}"  class="product-title"><!-- {{$_productDetails->name}} -->
+                                            <a href="{{ route('singleproduct', ['url' => $_productDetails->url_key]) }}"  class="product-title" style="font-size:14px;font-weight:500"><!-- {{$_productDetails->name}} -->
                                              {{ \Illuminate\Support\Str::limit($_productDetails->name, $limit = 40, $end = '...') }}
                                             </a></span>
                                          
-                                        <div class="product-price">
+                                        <div class="product-price" style="font-size:16px;font-weight:500">
                                             <span>$ {{$_productDetails->special_price}} </span>
                                             <span class="old-price">$ {{$_productDetails->price}}</span>
                                         </div>   
