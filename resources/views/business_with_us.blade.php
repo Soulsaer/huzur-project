@@ -473,7 +473,7 @@
             hassle-free!</p>
         </div>
         <article>
-            @if($whyChoose)
+            {{-- @if($whyChoose)
             <ul>
                 <li><label>Process</label>
                     @foreach($whyChoose as $data)
@@ -505,42 +505,42 @@
                         closeOnOverlayClick: false});getCustomPopup();">Customize Now</a> -->
                 </li>
             </ul>
-            @endif
+            @endif --}}
         </article>
     </section>
 
 
                     
-        <section class="mid-section">
-            <figure><img class="lazy loaded" src="https://www.woodenstreet.com/images/custom-furniture/mobile-chat.jpg"
-                data-src="https://www.woodenstreet.com/images/custom-furniture/mobile-chat.jpg" data-was-processed="true"></figure>
-            <aside>
-                <div class="title clearfix"><img
-                    src="https://www.woodenstreet.com/images/custom-furniture/whatsapp.svg">
-                    We do a little more than
-                    <strong>Customization</strong>
-                </div>
-                <p>Share with us your custom furniture designs on WhatsApp </p>
-                <!-- <a class="btn btn_common">Customize Now</a> -->
-                <a class="btn btn_common" href="https://api.whatsapp.com/send?phone=+919610000114">Customize Now</a>
-            </aside>
-        </section>
+    <section class="mid-section">
+        <figure><img class="lazy loaded" src="https://www.woodenstreet.com/images/custom-furniture/mobile-chat.jpg"
+            data-src="https://www.woodenstreet.com/images/custom-furniture/mobile-chat.jpg" data-was-processed="true"></figure>
+        <aside>
+            <div class="title clearfix"><img
+                src="https://www.woodenstreet.com/images/custom-furniture/whatsapp.svg">
+                We do a little more than
+                <strong>Customization</strong>
+            </div>
+            <p>Share with us your custom furniture designs on WhatsApp </p>
+            <!-- <a class="btn btn_common">Customize Now</a> -->
+            <a class="btn btn_common" href="https://api.whatsapp.com/send?phone=+919610000114">Customize Now</a>
+        </aside>
+    </section>
 
                             <!--  -->
 
-        <div class="slider2 py-80">
-            <h1 class="homepage_heading text-start ms-3">{{ $businessSection->wjr_section_title }}</h1>
-            <h3 class="fs-5 mb-4 text-start ms-3">{{ $businessSection->wjr_section_tag_line }} </h3>
-            <div class="slide-track2">
-                @if(!empty($resellers) && count($resellers) > 0)
-                @foreach($resellers as $reseller)
-                <div class="slide2">
-                    <img src="{{ asset('storage/'.$reseller->image) }}" height="100%" width="100%" alt="{{ $reseller->name }}" />
-                </div>
-                @endforeach
-                @endif
+    <div class="slider2 py-80">
+        <h1 class="homepage_heading text-start ms-3">{{ $businessSection->wjr_section_title }}</h1>
+        <h3 class="fs-5 mb-4 text-start ms-3">{{ $businessSection->wjr_section_tag_line }} </h3>
+        <div class="slide-track2">
+            @if(!empty($resellers) && count($resellers) > 0)
+            @foreach($resellers as $reseller)
+            <div class="slide2">
+                <img src="{{ asset('storage/'.$reseller->image) }}" height="100%" width="100%" alt="{{ $reseller->name }}" />
             </div>
+            @endforeach
+            @endif
         </div>
+    </div>
 
 
         <!--  -->
@@ -865,7 +865,7 @@
         <div class="py-80 pt-0 d-flex justify-content-center my-4 align-items-center view_detail w-100 hover-up">
             <a href="javascript:void(0)" id="readMoreBtn" class="d-block m-auto fs-6" onclick="toggleHeight()">Read
                 More<i class="fa-solid fa-angle-right ps-2"></i></a>
-            </div>
+        </div>
             <script>
                 function toggleHeight() {
                     var myDiv = document.getElementById('myDiv');
@@ -974,7 +974,7 @@
             </section>
 
             <!-- faq js -->
-        </main>
+</main>
 @endsection
 
 @section('js')
