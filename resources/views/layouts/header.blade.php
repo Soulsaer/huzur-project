@@ -16,7 +16,7 @@
         <div class="container">
             <div class="header-wrap">
                 <div style="width:50%;display:flex">
-                    <div class="customer-support b1" aria-label="Customer Support" style="padding-right:5px">24/7 Customer Support</div>
+                    <div class="customer-support b1" aria-label="Customer Support" style="padding-right:5px;text-wrap: nowrap;">24/7 Customer Support</div>
                     <div class="contact-details" style="border-left: 2px solid;padding-left: 5px;"><a class="call b1 animated-title notranslate" target="_blank" href="/b/contact-us" aria-label="+1-844-527-4367 - open in a new tab" data-uw-rm-ext-link="" uw-rm-external-link-id="#" data-uw-rm-brl="PR" data-uw-original-href="#">+919610000114</a></div>
                 </div>
                 <div class="header-right text-center">
@@ -56,17 +56,17 @@
         </div>
     </div>
     <div class="header-bottom header-bottom-bg-color sticky-bar">
-        <div class="container">
-            <div class="header-wrap header-space-between position-relative">
+        <div class="">
+            <div class="header-wrap header-space-between position-relative w-100">
                 <div class="logo logo-width-1 d-block d-lg-none d-xl-none">
                     <a href="{{ url('/') }}">
                         <h2 class="brand_logo"><img src="assets/images/fav_logo.png" class="img-fluid" alt=""></h2>
                     </a>
                 </div>
-                <div class="header-nav d-none d-lg-flex">
-                    <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block">
+                <div class="header-nav d-none d-lg-flex w-100">
+                    <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block w-100">
                         <nav>
-                            <ul class="d-flex">
+                            <ul class="d-flex justify-content-around">
                                 <div class="align-self-center">
                                     <a href="{{ url('/') }}">
                                         <img id="image" src="assets/images/fav_logo.png" width="90px" class="mt-2 me-4"
@@ -125,12 +125,12 @@
                                 </li> -->
                                 <li>
                                     <div>
-                                        <a href="{{ route('business_us') }}" class="bg-dark text-light p-2 rounded">Business With us</i></a>
+                                        <a href="{{ route('business_us') }}" class="bg-dark text-light p-2 rounded">BUSINESS WITH US</i></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <a  href="{{ route('customizaton') }}" class="bg-dark text-light p-2 rounded">Customization</i></a>
+                                        <a  href="{{ route('customizaton') }}" class="bg-dark text-light p-2 rounded">CUSTOMIZATION</i></a>
                                     </div>
                                 </li>
                                 <!-- <li><a href="javascript:void(0)">MORE<i class="fa-solid fa-angle-down"></i></a>
