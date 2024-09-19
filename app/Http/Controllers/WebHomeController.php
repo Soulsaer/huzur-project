@@ -650,7 +650,7 @@ public function about_us(){
             $q->with('variant');
         }, 'gemstone_variants' => function($q) {
             $q->with('variant');
-        }])->where("url_key", $slug)->first();
+        },'category'])->where("url_key", $slug)->first();
 
         $products = Product::where('parent_category', $product->parent_category)->inRandomOrder()
             ->limit(10)

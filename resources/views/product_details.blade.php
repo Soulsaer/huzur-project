@@ -51,12 +51,11 @@
             <div class="container">
                 <div class="breadcrumb" class="text-light">
                     <a href="index.html" class="text-light" rel="nofollow">Home /</a>
-                    <span class="p-0 text-light">Fashion /</span>
-                    <span class="p-0 text-light">Prong Set Princess-Cut Diamond Split Shank Promise Ring</span>
+                    <span class="p-0 text-light">{{ $product->category->name }} /</span>
+                    <span class="p-0 text-light">{{ $product->name }}</span>
                 </div>
             </div>
         </div>
-      
         <section class="pt-50 mb-50">
             <div>
                 <div class="row m-0 ">
@@ -91,11 +90,11 @@
                                                 <img id="skinToneImage" src="hand_light.png" alt="Skin Tone Image" style="margin-top: 20%">
                                                 <input type="range" min="0" max="100" value="0" id="skinToneRange" style=" transform: rotate(90deg); position: absolute;top: 60%;right: -116px;">
                                             </div> -->
-                                            <div style="position:relative; background-color: white;height: 680px;">
+                                            {{-- <div style="position:relative; background-color: white;height: 680px;">
                                                 <img src="{{ asset('assets/earring.png') }}" style="position: absolute;top: 0;left:0; z-index: 99;" alt="">
                                                 <img id="skinToneImage" src="{{ asset('assets/light.jpeg') }}" alt="Skin Tone Image">
                                                 <input type="range" min="0" max="100" value="0" id="skinToneRange" style=" transform: rotate(90deg); position: absolute;top: 50%;right: -116px;">
-                                              </div>
+                                              </div> --}}
                                               <!-- <div style="position:relative; width: 500px; background-color: white;height: 680px;">
                                                 <img src="{{ asset('assets/braslet.png') }}" style="position: absolute;top: 0;left:0; z-index: 99;" alt="">
                                                 <img id="skinToneImage" src="wrist_light.png" alt="Skin Tone Image">
